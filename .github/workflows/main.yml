@@ -2,7 +2,7 @@ name: Django-app workflow
 
 on: [push]
 
-  jobs:
+jobs:
   tests:
     runs-on: ubuntu-latest
 
@@ -23,7 +23,6 @@ on: [push]
       run: |
         python -m flake8
         pytest
-        
   build_and_push_to_docker_hub:
       name: Push Docker image to Docker Hub
       runs-on: ubuntu-latest
@@ -43,10 +42,10 @@ on: [push]
           with:
             context: ./api_yamdb
             push: true
-            tags: yuliakhalaeva/api_yamdb:latest
+            tags: annakartasheva/yamdb:latest
             file: api_yamdb/Dockerfile
 
-    deploy:
+  deploy:
       runs-on: ubuntu-latest
       needs: build_and_push_to_docker_hub
       steps:

@@ -1,6 +1,7 @@
 # Описание
 
 Проект `YaMDb` собирает отзывы пользователей на произведения из категорий: «Книги», «Фильмы», «Музыка».
+![my badge](https://github.com/YuliaKhalaeva/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) </p>
 
 # Функционал
 

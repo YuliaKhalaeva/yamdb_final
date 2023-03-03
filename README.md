@@ -66,8 +66,8 @@
 - Запустите sudo apt install docker.io
 - Запустите sudo apt-get update
 - Запустите sudo apt-get install docker-compose-plugin
-- Обновите secrets in Github Actions
-- Перезапустите jobs in Github Actions или запушьте новую версию кода
+- Обновите secrets в Github Actions
+- Перезапустите jobs в Github Actions или запушьте новую версию кода
 - Запустите pip3 install -r /app/requirements.txt --no-cache-dir
 - Запуститет sudo docker-compose exec web python manage.py migrate
 - Запустите sudo docker-compose exec web python manage.py createsuperuser

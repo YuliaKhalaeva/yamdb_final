@@ -42,7 +42,7 @@ jobs:
           with:
             context: ./api_yamdb
             push: true
-            tags: yuliakhalaeva/api_yamdb:latest
+            tags: yuliakhalaeva/yamdb:latest
             file: api_yamdb/Dockerfile
 
   deploy:

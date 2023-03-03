@@ -1,15 +1,15 @@
-import csv
 import os
+import csv
 
 from django.conf import settings
 from django.core.management.base import BaseCommand
-from reviews.models import Category, Comment, Genre, Title, Review
+from reviews.models import Category, Comment, Genre, Review, Title
 from users.models import User
 
 
 class Command(BaseCommand):
     help = 'Import data from csv'
-    
+
     def handle(self, *args, **kwargs):
         file_models = [
             ("category.csv", Category),

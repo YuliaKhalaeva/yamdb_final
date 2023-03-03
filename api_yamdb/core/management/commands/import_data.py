@@ -1,16 +1,14 @@
-import os 
-
 import csv
-
 from django.conf import settings
 from django.core.management.base import BaseCommand
+import os 
 from reviews.models import Category, Comment, Genre, Title, Review
 from users.models import User
 
 
 class Command(BaseCommand):
     help = 'Import data from csv'
-
+    
     def handle(self, *args, **kwargs):
         file_models = [
             ("category.csv", Category),

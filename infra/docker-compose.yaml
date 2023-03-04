@@ -9,7 +9,7 @@ services:
       - ./.env
 
   web:
-    image: juliakhalayeva/yamdb:latest
+    image: juliakhalayeva/yamdb
     restart: always
     volumes:
       - static_value:/app/static/

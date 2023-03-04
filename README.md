@@ -68,7 +68,7 @@
 - Запустите sudo apt-get install docker-compose-plugin
 - Обновите secrets в Github Actions
 - Перезапустите jobs в Github Actions или запушьте новую версию кода
-- Запустите pip3 install -r /app/requirements.txt --no-cache-dir
+- Запустите pip3 install -r requirements.txt --no-cache-dir
 - Запуститет sudo docker-compose exec web python manage.py migrate
 - Запустите sudo docker-compose exec web python manage.py createsuperuser
 - Запустите sudo docker-compose exec web python manage.py collectstatic --no-input
@@ -79,4 +79,3 @@
 - Запустите sudo docker exec -it CONTAINER_ID /bin/bash and check whether the file is there (ls, cd static, ls)
 - в браузере,перейдите на ваш-публичный-ip/admin и ваш-публичный-ip/redoc/ чтобы проверить что проект доступен.
 
-[admin panel](http://158.160.2.37/admin/) and [redoc](http://158.160.2.37/redoc/)

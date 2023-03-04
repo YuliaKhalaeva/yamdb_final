@@ -3,14 +3,18 @@ version: '3.8'
 services:
   db:
     image: postgres:13.0-alpine
+    container_name: postgres-server
+    hostname: postgres-server
     volumes:
-      - /var/lib/postgresql/data/
+      - database:/var/lib/postgresql/data/
     env_file:
       - ./.env
 
   web:
-    image: juliakhalayeva/yamdb
+    build: ../api_yamdb
     restart: always
+    container_name: web-server
+    hostname: web-server
     volumes:
       - static_value:/app/static/
       - media_value:/app/media/
@@ -21,8 +25,10 @@ services:
 
   nginx:
     image: nginx:1.21.3-alpine
+    container_name: nginx-server
+    hostname: nginx-server
     ports:
-      - "50:50"
+      - "80:80"
     volumes:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
       - static_value:/var/html/static/
@@ -31,5 +37,6 @@ services:
       - web
 
 volumes:
+  database:
   static_value:
   media_value:

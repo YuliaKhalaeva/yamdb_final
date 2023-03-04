@@ -1,8 +1,8 @@
 # Описание
 
 Проект `YaMDb` собирает отзывы пользователей на произведения из категорий: «Книги», «Фильмы», «Музыка».
-![my badge](https://github.com/YuliaKhalaeva/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg) </p>
-
+![my badge](https://github.com/YuliaKhalaeva/yamdb_final/actions/workflows/main.yml/badge.svg) </p>
+[admin panel](http://http://158.160.10.58/admin/) and [redoc](http://http://158.160.10.58/redoc/).<p></p>
 # Функционал
 
 - Произведения делятся на категории. Список категорий может быть расширен администратором;

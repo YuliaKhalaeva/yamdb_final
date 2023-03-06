@@ -43,8 +43,8 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          context: ./api_yamdb/
-          tags: ${{ secrets.DOCKER_USERNAME }}/api_yamdb:latest
+          context: ./yamdb/
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb:latest
 
   deploy:
     runs-on: ubuntu-latest

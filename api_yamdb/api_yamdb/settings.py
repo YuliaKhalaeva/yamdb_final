@@ -11,7 +11,7 @@ VALUE_DISPLAY = '-Empty-'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['*', '158.160.10.58' ]
 
 
 INSTALLED_APPS = [
